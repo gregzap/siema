@@ -1,0 +1,19 @@
+body {
+    background-color: #27496d;
+    font-size: 20px;
+    font-family: georgia;
+    color: #dae1e7;
+}
+hr {
+    border-style: none;
+    border-top: 5px dotted #dae1e7;
+    height: 2px;
+    width: 3%;
+}
+.picture {
+    margin-bottom: 30px;
+    border: 3px dotted white;
+    border-radius: 50%;
+    height: auto;
+    width: 15%;
+}
