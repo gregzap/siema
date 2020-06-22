@@ -68,3 +68,11 @@ h1 {
 .przycisk:hover {
     opacity: 0.5;
 }
+#licznik {
+    font-size: 31px;
+    margin: 0;
+}
+.tytul {
+    margin: 0;
+    font-size: 35px;
+}

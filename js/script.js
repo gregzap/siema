@@ -1,10 +1,14 @@
 window.onload = ustawKonona;
 var speedKonon=1;
+var licznikKonona = 0;
 var stopnie=1;
 var takNie = 0;
 var kolor;
 var w = document.documentElement.clientWidth;
 window.addEventListener("resize", ustawKonona);
+function liczeSe(){
+    document.getElementById("licznik").innerHTML = licznikKonona;
+}
 function zakrencKonona(){
     var krenciol = document.getElementById("pic");
      krenciol.style.transform = "rotate("+stopnie+"deg)"; 
@@ -38,6 +42,7 @@ function ruszSie(){
     var start = w/2-konon.width/2;
     var id = setInterval(frame, 5);
     function frame(){
+        liczeSe();
         zakrencKonona();
         if (takNie == 0){
             if (start>=w-konon.width-10){
@@ -46,6 +51,7 @@ function ruszSie(){
                 takNie=1;
                 fajnyKolor();
                 document.getElementById("siema").style.backgroundColor = "#"+kolor;
+                licznikKonona++;
             } else {
                 start+=speedKonon;
                 konon.style.left = start + "px";
@@ -58,6 +64,7 @@ function ruszSie(){
                 takNie=0;
                 fajnyKolor();
                 document.getElementById("siema").style.backgroundColor = "#"+kolor;
+                licznikKonona++;
             } else {
                 start-=speedKonon;
                 konon.style.left = start + "px";
