@@ -26,6 +26,8 @@ h1 {
 #siema {
     background-color: #3b6978;
     border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
     margin-bottom: 1%;
     width: 100%-2px;
     position: relative;
@@ -42,6 +44,8 @@ h1 {
 .siema2 {
     background-color: #3b6978;
     border: 1px solid #dae1e7;
+    border-left: 0px;
+    border-right: 0px;
     margin-top: 1%;
 }
 .siema2:hover {
