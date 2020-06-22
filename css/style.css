@@ -1,0 +1,64 @@
+body {
+    background-color: #27496d;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #dae1e7;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    color: #dae1e7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+#pic{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 15%;
+    position: absolute;
+}
+#pic:hover {
+    opacity: 0.5;
+}
+#siema {
+    background-color:darkblue;
+    border: 1px solid white;
+    margin-bottom: 1%;
+    width: 100%-2px;
+    position: relative;
+}
+.siema1 {
+    background-color:rgba(25, 0, 255, 0.575);
+    border: 1px solid #dae1e7;
+    width: 200px;
+    margin: auto;
+}
+.siema1:hover {
+    opacity: 0.5;
+}
+.siema2 {
+    background-color: blue;
+    border: 1px solid #dae1e7;
+    margin-top: 1%;
+}
+.siema2:hover {
+    opacity: 0.5;
+}
+.hr1 {
+    border-style: none;
+    border-top: 5px dotted #dae1e7;
+    height: 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 3%;
+}
+.przycisk {
+    background-color: rgb(49, 127, 175);
+    border: 1px solid white;
+    color: white;
+}
+.przycisk:hover {
+    opacity: 0.5;
+}
