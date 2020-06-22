@@ -1,8 +1,20 @@
 window.onload = ustawKonona;
 var speedKonon=1;
+var stopnie=1;
+var takNie = 0;
 var kolor;
 var w = document.documentElement.clientWidth;
 window.addEventListener("resize", ustawKonona);
+function zakrencKonona(){
+    var krenciol = document.getElementById("pic");
+     krenciol.style.transform = "rotate("+stopnie+"deg)"; 
+     if (takNie==0){
+         stopnie++;
+     }
+     else {
+         stopnie--;
+     }
+}
 function fajnyKolor(){
      kolor = Math.floor(Math.random()*16777215).toString(16);
 }
@@ -19,13 +31,14 @@ function ustawKonona(){
     var konon = document.getElementById("pic");
     document.getElementById("siema").style.height = konon.height+4+ "px";
     konon.style.left = w / 2 - konon.width / 2 +"px";
+    zakrencKonona();
 }
 function ruszSie(){
     var konon = document.getElementById("pic");
     var start = w/2-konon.width/2;
-    var takNie = 0;
     var id = setInterval(frame, 5);
     function frame(){
+        zakrencKonona();
         if (takNie == 0){
             if (start>=w-konon.width-10){
                 //clearInterval(id)
@@ -49,7 +62,6 @@ function ruszSie(){
                 start-=speedKonon;
                 konon.style.left = start + "px";
             }
-        }
-        
+        } 
     }
 }
