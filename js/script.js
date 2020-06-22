@@ -17,7 +17,7 @@ function zwolnijKonona(){
 function ustawKonona(){
     w = document.documentElement.clientWidth;
     var konon = document.getElementById("pic");
-    document.getElementById("siema").style.height = konon.height+6+ "px";
+    document.getElementById("siema").style.height = konon.height+4+ "px";
     konon.style.left = w / 2 - konon.width / 2 +"px";
 }
 function ruszSie(){
