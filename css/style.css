@@ -1,78 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 body {
-    background-color: #204051;
-    font-size: 20px;
-    font-family: 'Handlee', cursive;
-    color: #dae1e7;
-    margin: 0px;
+  background-color: #204051;
+  font-size: 20px;
+  font-family: "Handlee", cursive;
+  color: #dae1e7;
+  margin: 0px;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 h1 {
-    color: #dae1e7;
-    font-family: 'Handlee', cursive;
-    font-size: 35px;
+  color: #dae1e7;
+  font-family: "Handlee", cursive;
+  font-size: 35px;
 }
-#pic{
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 15%;
-    position: absolute;
+#pic {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 15%;
+  position: absolute;
+  cursor: pointer;
+  transition: opacity 1s;
 }
 #pic:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 #siema {
-    background-color: #3b6978;
-    border: 1px solid white;
-    border-left: 0px;
-    border-right: 0px;
-    margin-bottom: 1%;
-    width: 100%-2px;
-    position: relative;
+  background-color: #3b6978;
+  border: 1px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 1%;
+  width: 100%-2px;
+  position: relative;
+  top: 60px;
 }
-.siema1 {
-    background-color: #3b6978;
-    border: 1px solid #dae1e7;
-    width: 200px;
-    margin: auto;
+#siema1 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  width: 200px;
+  margin: auto;
+  transition: opacity 1s;
 }
-.siema1:hover {
-    opacity: 0.5;
+#siema1:hover {
+  opacity: 0.5;
 }
-.siema2 {
-    background-color: #3b6978;
-    border: 1px solid #dae1e7;
-    border-left: 0px;
-    border-right: 0px;
-    margin-top: 1%;
+#siema2 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 1%;
+  transition: opacity 1s;
 }
-.siema2:hover {
-    opacity: 0.5;
+#siema2:hover {
+  opacity: 0.5;
+}
+#siema3 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 1%;
+  transition: opacity 1s;
+}
+#siema3:hover {
+  opacity: 0.5;
+}
+#siema4 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 1%;
+  transition: opacity 1s;
+}
+#siema4:hover {
+  opacity: 0.5;
+}
+#siema5 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 1%;
+  transition: opacity 1s;
+}
+#siema5:hover {
+  opacity: 0.5;
+}
+#siema6 {
+  background-color: #3b6978;
+  border: 1px solid #dae1e7;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 1%;
+  transition: opacity 1s;
+}
+#siema6:hover {
+  opacity: 0.5;
 }
 .hr1 {
-    border-style: none;
-    border-top: 5px dotted #dae1e7;
-    height: 2px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 3%;
+  border-style: none;
+  border-top: 5px dotted #dae1e7;
+  height: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 3%;
 }
 .przycisk {
-    background-color: rgb(49, 127, 175);
-    border: 1px solid white;
-    color: white;
-    font-family: 'Handlee', cursive;
+  background-color: #3b6978;
+  border: 1px solid white;
+  color: white;
+  font-family: "Handlee", cursive;
+  cursor: pointer;
+  transition: opacity 1s;
 }
 .przycisk:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 #licznik {
-    font-size: 31px;
-    margin: 0;
+  font-size: 31px;
+  margin: 0;
 }
 .tytul {
-    margin: 0;
-    font-size: 35px;
+  margin: 0;
+  font-size: 35px;
+}
+.navbar {
+  position: fixed;
+  height: 60px;
+  background-color: #84a9ac;
+  width: 100%;
+  font-size: 0px;
+  top: 0px;
+  z-index: 10000;
+  border-bottom: 1px solid white;
+}
+.selnav {
+  background-color: #222831;
+  border: 0px;
+  cursor: pointer;
+  color: #dae1e7;
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  padding: 20px 60px;
+  width: 12.5%;
+  height: 60px;
+  transition: background-color 1s;
+  outline: none;
+}
+.selnav:hover {
+  background-color: #52616b;
 }
