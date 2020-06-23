@@ -22,7 +22,15 @@ function zakrencKonona() {
   }
 }
 function fajnyKolor() {
-  kolor = Math.floor(Math.random() * 16777215).toString(16);
+  //kolor = Math.floor(Math.random() * 16777215).toString(16);
+  const szesnastka = "0123456789ABCDEF";
+  kolor = "#";
+  for (let i = 0; i < 6; i++) {
+    kolor += szesnastka[Math.floor(Math.random() * 16)];
+  }
+}
+function jakiKolor() {
+  document.getElementById("jakikolor").innerHTML = kolor;
 }
 function spidnijKonona() {
   speedKonon++;
@@ -51,7 +59,8 @@ function ruszSie() {
       if (start >= w - konon.width - 10) {
         takNie = 1;
         fajnyKolor();
-        document.getElementById("siema").style.backgroundColor = "#" + kolor;
+        jakiKolor();
+        document.getElementById("siema").style.backgroundColor = kolor;
         document.getElementById("siema").style.transition = "2s";
         licznikKonona++;
         pomusz = 1;
@@ -63,7 +72,8 @@ function ruszSie() {
       if (start <= 0) {
         takNie = 0;
         fajnyKolor();
-        document.getElementById("siema").style.backgroundColor = "#" + kolor;
+        jakiKolor();
+        document.getElementById("siema").style.backgroundColor = kolor;
         document.getElementById("siema").style.transition = "2s";
         licznikKonona++;
         pomusz = 1;
