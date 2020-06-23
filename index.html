@@ -8,6 +8,7 @@
     <script src="js/script.js"></script>
   </head>
   <body>
+    <div id ="animacja"></div>
     <div class = "navbar">
       <button id ="selnav1" class="selnav">#1</button>
       <button id ="selnav2" class="selnav" >#2</button>
@@ -16,13 +17,16 @@
       <button id ="selnav5" class="selnav" >#5</button> 
       <button id ="selnav6" class="selnav" >#6</button>
       <button id ="selnav7"class="selnav" >#7</button>
-      <button id="dark" class="selnav" onclick = "turnDark()">DARK</button>
+      <button id="dark" class="selnav" onclick = "turnDark()">DARK <span id="onoff">OFF</span></button>
     </div>
     <div id = "siema">   
         <img src="img/obama.png" onclick="ruszSie()" alt="to ja" id="pic"></img>
     </div>
-    <center><p class="tytul">LICZNIK WARMIANINA:</p></center>
-    <center><span id = "licznik">0</span></center>
+    <div id ="fixsiema">
+      <center><span class="tytul">LICZNIK WARMIANINA:</span></center>
+      <center><span id = "licznik">0</span></center>
+    </div>
+    <br><br>
     <center>
       <button class="przycisk" id="przycisk1" onclick="zwolnijKonona()">WOLNIJ</button>
       <button class ="przycisk" id="przycisk2" onclick="spidnijKonona()">SZYPCIEJ</button>

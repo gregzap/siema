@@ -52,6 +52,7 @@ function ruszSie() {
         takNie = 1;
         fajnyKolor();
         document.getElementById("siema").style.backgroundColor = "#" + kolor;
+        document.getElementById("siema").style.transition = "2s";
         licznikKonona++;
         pomusz = 1;
       } else {
@@ -63,6 +64,7 @@ function ruszSie() {
         takNie = 0;
         fajnyKolor();
         document.getElementById("siema").style.backgroundColor = "#" + kolor;
+        document.getElementById("siema").style.transition = "2s";
         licznikKonona++;
         pomusz = 1;
       } else {
@@ -86,6 +88,7 @@ function turnDark() {
     document.getElementById("przycisk1").style.backgroundColor = "#393e46";
     document.getElementById("przycisk2").style.backgroundColor = "#393e46";
     document.body.style.backgroundColor = "#222831";
+    document.getElementById("onoff").innerHTML = "ON";
     modeHelp = 1;
   } else {
     if (pomusz == 0) {
@@ -101,6 +104,7 @@ function turnDark() {
     document.getElementById("przycisk1").style.backgroundColor = "#3b6978";
     document.getElementById("przycisk2").style.backgroundColor = "#3b6978";
     document.body.style.backgroundColor = "#204051";
+    document.getElementById("onoff").innerHTML = "OFF";
     modeHelp = 0;
   }
 }

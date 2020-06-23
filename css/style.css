@@ -120,12 +120,12 @@ h1 {
   opacity: 0.5;
 }
 #licznik {
-  font-size: 31px;
+  font-size: 25px;
   margin: 0;
 }
 .tytul {
   margin: 0;
-  font-size: 35px;
+  font-size: 25px;
 }
 .navbar {
   position: fixed;
@@ -152,4 +152,8 @@ h1 {
 }
 .selnav:hover {
   background-color: #52616b;
+}
+#fixsiema {
+  position: relative;
+  top: 50px;
 }
