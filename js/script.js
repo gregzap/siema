@@ -1,5 +1,6 @@
 window.onload = ustawKonona;
 var speedKonon = 1;
+var pomusz = 0;
 var licznikKonona = 0;
 var stopnie = 1;
 var takNie = 0;
@@ -52,6 +53,7 @@ function ruszSie() {
         fajnyKolor();
         document.getElementById("siema").style.backgroundColor = "#" + kolor;
         licznikKonona++;
+        pomusz = 1;
       } else {
         start += speedKonon;
         konon.style.left = start + "px";
@@ -62,6 +64,7 @@ function ruszSie() {
         fajnyKolor();
         document.getElementById("siema").style.backgroundColor = "#" + kolor;
         licznikKonona++;
+        pomusz = 1;
       } else {
         start -= speedKonon;
         konon.style.left = start + "px";
@@ -71,7 +74,9 @@ function ruszSie() {
 }
 function turnDark() {
   if (modeHelp == 0) {
-    document.getElementById("siema").style.backgroundColor = "#393e46";
+    if (pomusz == 0) {
+      document.getElementById("siema").style.backgroundColor = "#393e46";
+    }
     document.getElementById("siema1").style.backgroundColor = "#393e46";
     document.getElementById("siema2").style.backgroundColor = "#393e46";
     document.getElementById("siema3").style.backgroundColor = "#393e46";
@@ -83,7 +88,9 @@ function turnDark() {
     document.body.style.backgroundColor = "#222831";
     modeHelp = 1;
   } else {
-    document.getElementById("siema").style.backgroundColor = "#3b6978";
+    if (pomusz == 0) {
+      document.getElementById("siema").style.backgroundColor = "#3b6978";
+    }
     document.getElementById("siema1").style.backgroundColor = "#3b6978";
     document.getElementById("siema2").style.backgroundColor = "#3b6978";
     document.getElementById("siema2").style.backgroundColor = "#3b6978";
